@@ -8,6 +8,16 @@ package multiprocesos;
  *
  * @author Hp
  */
-public class Pin {
-    
+public class Pin extends Thread{
+        @Override
+    public void run(){
+        while (true) {
+            System.out.println("PIN");
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

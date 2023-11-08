@@ -8,6 +8,16 @@ package multiprocesos;
  *
  * @author Hp
  */
-public class Pon {
-    
+public class Pon extends Thread {
+        @Override
+    public void run(){
+        while (true) {
+            System.out.println("PON");
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

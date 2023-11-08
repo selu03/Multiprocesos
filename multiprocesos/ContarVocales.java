@@ -8,13 +8,6 @@ package multiprocesos;
  *
  * @author Hp
  */
-public class MainPinPon {
-      public static void main(String[] args) {
-        Pin hiloPin = new Pin();
-        Pon hiloPon = new Pon();
-
-        hiloPin.start();
-        hiloPon.start();
-    }
+public class ContarVocales {
+    
 }
-

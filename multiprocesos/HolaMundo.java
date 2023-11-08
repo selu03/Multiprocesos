@@ -8,6 +8,11 @@ package multiprocesos;
  *
  * @author Hp
  */
-public class HolaMundo {
-    
+public class HolaMundo extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Hola Mundo desde el hilo " + this.getId());
+        }
+    }
 }
